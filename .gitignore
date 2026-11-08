@@ -1,0 +1,6 @@
+# Ignore PDF
+*/*.pdf
+*.pdf
+
+# Ignore docs
+docs/
