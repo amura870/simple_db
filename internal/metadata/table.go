@@ -14,7 +14,7 @@ type TableMgr struct {
 func NewTableMgr(isNew bool, t *tx.Transaction) (*TableMgr, error) {
 	ts, err := catalogSchema(
 		record.Field{Name: "tblname", Type: record.Varchar, Length: MaxName},
-		record.Field{Name: "slotSize", Type: record.Integer},
+		record.Field{Name: "slotsize", Type: record.Integer},
 	)
 	if err != nil {
 		return nil, err
